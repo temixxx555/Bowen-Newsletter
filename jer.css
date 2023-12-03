@@ -88,4 +88,8 @@
     flex-direction: column;
     align-items: center;
   }
+  .lol img{
+    width: 100%;
+    
+  }
 }
