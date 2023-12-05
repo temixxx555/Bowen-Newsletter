@@ -537,6 +537,9 @@ margin:20px  auto;
 .form button:hover {
   background-color: #181a1b;
 }
+#btnLogin{
+  display: none;
+}
 /**/
 .olo{
   grid-template-columns: none; 
