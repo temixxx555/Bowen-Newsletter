@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
@@ -16,67 +19,84 @@
     <link rel="stylesheet" href="jer.css">
     <link rel="shortcut icon" href="/images/loto.jpg" type="image/x-icon">
     <title>Inside Bowen</title>
-  </head>
-  <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+ 
+    <!--Adding Bootstrap-->    
+
+
+    
+    <title>Login & Signup Firebase</title>
    
-      <!--header-->
-      <header>
-        <!--header-->
-        <div class="header">
-          <div class="logo-tex">
-            <img class="logo" src="/images/logo.png" alt="logo" width="40px" />
-            <p>Inside bowen</p>
-          </div>
-          <div class="links">
-            <ul class="nav-links">
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="#footer">contact us</a></li>
-              <li><a href="/index.html#top5">top 5</a></li>
-              <li class="sign-up" ><a href="/join.html">Join now</a></li>
-          </ul>
-          <div class="menu-icon" onclick="toggleMenu()">
-              <i class="fas fa-bars"></i>
-          </div>
-      </div>
-      <ul class="dropdown-menu" id="dropdown-menu">
+</head>
+<body>
+  <header>
+  <div class="header">
+    <div class="logo-tex">
+      <img class="logo" src="/images/logo.png" alt="logo" width="40px" />
+      <p>Inside bowen</p>
+    </div>
+    <div class="links">
+      <ul class="nav-links">
         <li><a href="/index.html">Home</a></li>
         <li><a href="#footer">contact us</a></li>
         <li><a href="/index.html#top5">top 5</a></li>
         <li class="sign-up" ><a href="/join.html">Join now</a></li>
-      </ul>
-        </header>
-      <div class="kik">
-      <h2>Register and get to know everything going on in your school uncescored</h2>
-    <div class="logo-tex pim">
-     
-        <div class="main-img">
-            <img class="ink" src="/images/loto.jpg" alt="hacker logo" />
-          </div>
-          <form action="https://formspree.io/f/mayggrer" method="POST">
-            <input type="text" name="name" id="" placeholder="Name or Nickname" required>
-        <input type="email" name="email" id="" placeholder="Email address"id="email"required >
-        <button value="submit" type="submit">join now</button>
-
-      </form>
-      </div>
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
     </div>
-    <footer>
-      <h2>* want to feature on our  webpage ,or you have Any news you wAnt to report,or u wAnt to reAch us ,contact us at *</h2>
-      <div  class="social-icons">
-      
-        <a href="http://www.twitter.com/temiq5/" target="_blank">
-         <i class="fab fa-twitter">Twitter ( x )</i>
-        </a>
-        <a href="mailto:temiq3@gmail.com">
-         <i class="fas fa-at">Email</i>
-        </a>
-        <a href="https://wa.me/2349138721435" target="_blank">
-         <i class="fas fa-mobile-alt">Call me</i>
-        </a>
-     </div>
-     <p>**note this websie is updatted every friday weekly and our news are often gotten from reputable sources**</p>
-    </footer>
-      <script src="app.js"></script>
-  
+</div>
+<ul class="dropdown-menu" id="dropdown-menu">
+  <li><a href="/index.html">Home</a></li>
+  <li><a href="#footer">contact us</a></li>
+  <li><a href="/index.html#top5">top 5</a></li>
+  <li class="sign-up" ><a href="/join.html">Join now</a></li>
+</ul>
+  </header>
+
+
+  <div class="kik">
+    <h2>Register and get to know everything going on in your school uncescored</h2>
+    <div class="logo-tex pim">
+
+      <div class="main-img">
+        <img class="ink" src="/images/loto.jpg" alt="hacker logo" />
+      </div>
+   
+          
+          <div class="form">
+            <input type="text" class="form-control shadow-sm" id="txtEmail" name="email" placeholder="Email address" >
+          
+            <input type="password" class="form-control shadow-sm" id="txtPassword" name="password"placeholder="password"  >
+            
+            <button type="submit" class="btn btn-primary shadow" id="btnLogin">Login</button>
+            <button type="submit" class="btn btn-primary shadow" id="btnSignup">Join Now</button>
+       
+          </div>
+       
+    </div>
+  </div>
+  <footer>
+    <h2>* want to feature on our  webpage ,or you have Any news you wAnt to report,or u wAnt to reAch us ,contact us at *</h2>
+    <div  class="social-icons">
+    
+      <a href="http://www.twitter.com/temiq5/" target="_blank">
+       <i class="fab fa-twitter">Twitter ( x )</i>
+      </a>
+      <a href="mailto:temiq3@gmail.com">
+       <i class="fas fa-at">Email</i>
+      </a>
+      <a href="https://wa.me/2349138721435" target="_blank">
+       <i class="fas fa-mobile-alt">Call me</i>
+      </a>
+   </div>
+   <p>**note this websie is updatted every friday weekly and our news are often gotten from reputable sources**</p>
+  </footer>
+<script src="pp.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
