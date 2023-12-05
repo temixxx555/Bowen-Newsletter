@@ -307,6 +307,11 @@ figcaption{
   text-transform: uppercase;
   border-bottom: 2px solid #A73100;
 }
+textarea{
+  background-color: #181a1b;
+  color: #FFF;
+  padding: 10px;
+}
 form{
   display: flex;
   flex-direction: column;
