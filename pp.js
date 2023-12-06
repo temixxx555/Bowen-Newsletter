@@ -10,8 +10,8 @@
     appId: "1:787790307908:web:f11a73e952f27104e35211"
     };
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  
+ const app =firebase.initializeApp(firebaseConfig);
+   const analytics = getAnalytics(app)
     //Get Elements
     const txtEmail = document.getElementById("txtEmail");
     const txtPassword = document.getElementById("txtPassword");
