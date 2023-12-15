@@ -275,6 +275,7 @@ figcaption{
   border-bottom: 2px solid #a60000;
   padding: 20px;
   transition: 0.2s ease-in;
+  text-transform: capitalize;
 }
 .topics-text:hover{
   opacity: 0.6;
